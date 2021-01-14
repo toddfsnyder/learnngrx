@@ -1,0 +1,45 @@
+<div class="itemMargin">
+    <table cellspacing="2" cellpadding="2">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Items</th>
+            <th>Pending</th>
+        </tr>
+        <tr *ngFor="let item of customers$ | async; let i = index">
+            <td>{{item.name}}</td>
+            <td>{{item.city}}</td>
+            <td>{{item.itemsPurchased}}</td>
+            <td>{{item.itemsPending}}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="itemMargin">
+     <span class="field">Enter in a ID</span>
+     <input type ="text" class="field" [(ngModel)]="idValue" />
+     <button (click)="filterData()" class="field" >Filter</button>
+     <button (click)="loadData()">Load Customers</button>
+</div>
+<div class="itemMargin">
+    <span class="field">Selected Customer</span>
+</div>
+<div *ngIf="selectedCustomer$ | async as selectedCustomer">
+    <div class="itemMargin">
+        <span class="field">Customer Name:</span>
+        <span>{{selectedCustomer.name}}</span>
+    </div>
+    <div class="itemMargin">
+        <span class="field">Customer City:</span>
+        <span>{{selectedCustomer.city}}</span>
+    </div>
+    <div class="itemMargin">
+        <span class="field">Items Pending:</span>
+        <span>{{selectedCustomer.itemsPending}}</span>
+    </div>
+    <div class="itemMargin">
+        <span class="field">Items Purchased:</span>
+        <span>{{selectedCustomer.itemsPurchased}}</span>
+    </div>
+</div>
+

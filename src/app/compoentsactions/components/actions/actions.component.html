@@ -1,0 +1,14 @@
+<div class="itemMargin">
+    <span class="field">Count from Store</span>
+    <span>{{countData$ | async}}</span>
+</div>
+<div class="itemMargin">
+    <span class="field">Enter in a Value</span>
+     <input type ="text" [(ngModel)]="countValue" />
+</div>
+<div class="itemMargin">
+    <button class="field" (click)="addToCount()">Add</button>
+    <button class="field" (click)="subFromCount()">Substract</button>
+    <button class="field" (click)="resetCount()">Reset</button>
+    <button class="field" (click)="setCount()">Set Value</button>
+</div>

@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customers": [
+    {
+      "id": 1,
+      "name": "Customer One",
+      "city": "New York",
+      "itemsPurchased": 10,
+      "itemsPending": 5
+    },
+    {
+      "id": 2,
+      "name": "Customer Two",
+      "city": "Chicago",
+      "itemsPurchased": 4,
+      "itemsPending": 12
+    },
+    {
+      "id": 3,
+      "name": "Customer Three",
+      "city": "Portland",
+      "itemsPurchased": 7,
+      "itemsPending": 9
+    },
+    {
+      "id": 4,
+      "name": "Customer Four",
+      "city": "Nashville",
+      "itemsPurchased": 12,
+      "itemsPending": 14
+    },
+    {
+      "id": 5,
+      "name": "Customer Five",
+      "city": "Atlanta",
+      "itemsPurchased": 8,
+      "itemsPending": 4
+    }
+  ]
+}
